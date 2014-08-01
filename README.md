@@ -7,7 +7,7 @@ synopsis
 --------
 
 I was tired of looking at cluttered output in the console -- something needed to be done,
-`sys.inspect()` didn't display regexps correctly, and was too verbose, and I had an hour or two to spare. 
+`sys.inspect()` didn't display regexps correctly, and was too verbose, and I had an hour or two to spare.
 So I decided to have some fun. _eyes_ were born.
 
 ![eyes-ss](http://dl.dropbox.com/u/251849/eyes-js-ss.gif)
@@ -55,8 +55,9 @@ These are the default styles and settings used by _eyes_.
         bool:    'blue',      // true false
         regexp:  'green',     // /\d+/
     },
-    
+
     pretty: true,             // Indent object literals
+    sortObjectKeys: false,    // Sort object keys
     hideFunctions: false,     // Don't output functions at all
     stream: process.stdout,   // Stream to write to, or null
     maxLength: 2048           // Truncate output if longer
